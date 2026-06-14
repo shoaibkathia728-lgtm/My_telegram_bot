@@ -58,6 +58,7 @@ def get_user_status(user_id):
     
     free_used, is_premium, premium_expiry = row[0], row[1], row[2]
     
+    # Check if premium has expired
     if is_premium == 1 and premium_expiry:
         expiry_date = datetime.strptime(premium_expiry, "%Y-%m-%d %H:%M:%S")
         if datetime.now() > expiry_date:
