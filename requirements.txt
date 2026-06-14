@@ -1,2 +1,4 @@
-python-telegram-bot==22.8
-flask
+python-telegram-bot==20.8
+flask==3.0.2
+email-validator==2.1.1
+
